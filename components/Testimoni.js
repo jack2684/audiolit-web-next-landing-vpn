@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 // import react slick
 import Slider from "react-slick";
@@ -6,6 +6,7 @@ import Image from "next/image";
 import Stars from "../public/assets/Icon/stars.svg";
 import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
+import Link from 'next/link';
 
 const Testimoni = ({
   listTestimoni = [
@@ -51,9 +52,9 @@ const Testimoni = ({
     dots: true,
     customPaging: function (i) {
       return (
-        <a className="">
+        <Link href="/" className="">
           <span className="mx-2 rounded-l-full rounded-r-full h-4 w-4 block cursor-pointer transition-all "></span>
-        </a>
+        </Link>
       );
     },
     dotsClass: "slick-dots w-max absolute mt-20  ",

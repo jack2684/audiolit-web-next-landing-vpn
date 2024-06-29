@@ -1,6 +1,7 @@
 install:
-    pnpm install
-    pnpm build
+	pnpm install
+	pnpm install @babel/runtime
+	pnpm build
 
 dev:
-    pnpm dev
+	pnpm dev
