@@ -38,15 +38,14 @@ const Hero = ({
           variants={scrollAnimation}>
           <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-              Focus more on listening, less on screen, with <strong>Audiolit</strong>.
+              Focus more on learning, less on screen, with <strong>Audiolit</strong>.
             </h1>
             <p className="text-black-500 mt-4 mb-6">
-              Audio key higlight, summary and search, so you can harvest knowledge from Audio books, Podcasts, and Videos instantly.
+              With screen-free higlight, summary and search, you can harvest audio knowledge instantly Audio books, Podcasts, and Videos instantly.
             </p>
             <Link href="/register" className="">
-
               <ButtonPrimary>
-                Get Started
+                Sign me up!
               </ButtonPrimary>
             </Link>
           </div>
