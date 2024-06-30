@@ -15,6 +15,7 @@ const features = [
 const scenarios = [
   "Walking",
   "Hiking",
+  "Cooking",
   "Driving",
   "Riding on bus",
   "Baby sitting your newborn",
@@ -30,10 +31,13 @@ const Feature = () => {
       className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
       id="feature"
     >
-      <h1 className="text-3xl lg:text-4xl font-medium text-black-600 text-center">
-        It is the go-to app for audio learners
+      <h1 className="text-xl lg:text-2xl font-medium text-black-500 text-center">
+        Our mission:
       </h1>
-      <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
+      <h2 className="text-2xl lg:text-3xl font-medium text-black-600 text-center">
+        Make audio knowledge easy to access, and easy to share.
+      </h2>
+      <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 py-8 my-12">
         <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
@@ -48,15 +52,12 @@ const Feature = () => {
         </ScrollAnimationWrapper>
         <ScrollAnimationWrapper>
 
-          <motion.div className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12" variants={scrollAnimation}>
-            <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-              When you hear something great
+          <motion.div className="flex flex-col text-left items-end justify-center ml-auto w-full lg:w-9/12" variants={scrollAnimation}>
+            <h3 className="text-2xl lg:text-3xl font-normal leading-relaxed text-black-600">
+              When hearing something great
             </h3>
-            <p className="my-2 text-black-500">
-              You can higlight the audio without even unblock the screen.
-            </p>
-            <p className="my-2 text-black-500">
-              Just press a button, or a single tap, and you can higlight the the clip, you can highlight audio anywhere:
+            <p className="my-4 text-black-500">
+              You can higlight the audio without even unblock the screen. So you don't miss it when:
             </p>
             <ul className="text-black-500 self-start list-inside ml-8">
               {scenarios.map((feature, index) => (
