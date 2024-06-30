@@ -41,6 +41,9 @@ const Hero = ({
               Focus more on learning, less on screen, with <strong>Audiolit</strong>.
             </h1>
             <p className="text-black-500 mt-4 mb-6">
+              Give a break to your eyes.
+            </p>
+            <p className="text-black-500 mt-4 mb-6">
               With screen-free higlight, summary and search, you can harvest audio knowledge instantly Audio books, Podcasts, and Videos instantly.
             </p>
             <Link href="/register" className="">

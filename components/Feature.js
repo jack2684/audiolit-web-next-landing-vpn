@@ -31,7 +31,7 @@ const Feature = () => {
       id="feature"
     >
       <h1 className="text-3xl lg:text-4xl font-medium text-black-600 text-center">
-        Audiolit is the go-to learning app for audio learners
+        It is the go-to app for audio learners
       </h1>
       <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
         <ScrollAnimationWrapper className="flex w-full justify-end">
