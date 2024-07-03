@@ -18,7 +18,7 @@ const scenarios = [
   "Cooking",
   "Driving",
   "Riding on bus",
-  "Baby sitting your newborn",
+  "Babysitting your newborn",
   "Laying down in the dark bedroom",
 ]
 
@@ -115,7 +115,7 @@ const Feature = () => {
         <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
-              src="/assets/Illustration2.png"
+              src="/assets/lookinto.svg"
               alt="VPN Illustrasi"
               layout="responsive"
               quality={100}

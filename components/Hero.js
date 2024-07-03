@@ -1,5 +1,4 @@
 import { useMemo } from "react";
-import Image from "next/image";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
@@ -41,10 +40,10 @@ const Hero = ({
               Focus more on learning, less on screen, with <strong>Audiolit</strong>.
             </h1>
             <p className="text-black-500 mt-4 mb-1">
-              Give a break to your eyes.
+              Give a break to your eyes. Learning without looking at the screen.
             </p>
             <p className="text-black-500 mt-1 mb-6">
-              With "screen-free higlight", "summary and search", you can harvest knowledge instantly, no matter it is Audio books, Podcasts, or recordings.
+              With "screen-free higlight", "summary and search", you can harvest knowledge easily, no matter it is Audio books, Podcasts, or recordings.
             </p>
             <Link href="/register" className="">
               <ButtonPrimary>
@@ -54,14 +53,17 @@ const Hero = ({
           </div>
           <div className="flex w-full">
             <motion.div className="h-full w-full" variants={scrollAnimation}>
-              <Image
+              {/* <Image
                 src="/assets/Illustration1.png"
                 alt="VPN Illustrasi"
                 quality={100}
                 width={612}
                 height={383}
                 layout="responsive"
-              />
+              /> */}
+              <div>
+                <iframe src="https://giphy.com/embed/UUzJ9ZMeUloj6vkNNk" width="480" height="480" style={{ border: 0 }} class="giphy-embed" allowFullScreen></iframe>
+              </div>
             </motion.div>
           </div>
         </motion.div>
@@ -87,6 +89,7 @@ const Hero = ({
                   <p className="text-lg text-black-500">{showcases.name}</p>
                 </div>
               </div>
+
             </motion.div>
           ))}
         </ScrollAnimationWrapper>
