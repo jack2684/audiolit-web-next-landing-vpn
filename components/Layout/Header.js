@@ -3,6 +3,7 @@ import Link from "next/link";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
+import Image from "next/image";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);

@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
           {/* <LogoVPN className="h-40 w-auto mb-6" /> */}
           {/* <LogoAudiolit className="w-auto mb-6" height="50%" width="50%" preserveAspectRatio="xMidYMid meet" /> */}
-          <Image src="/assets/audiolit-banner.png" alt="Logo" width={"100"} height={"50"} style={{
+          <img src="/assets/audiolit-banner.png" alt="Logo" width={"100"} height={"50"} style={{
             backgroundColor: 'transparent',
           }} />
           <p className="mb-4">
