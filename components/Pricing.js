@@ -14,7 +14,7 @@ const Pricing = () => {
       <ScrollAnimationWrapper className="flex justify-center">
         <motion.div
           variants={scrollAnimation}
-          className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+          className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-16"
           whileHover={{
             scale: 1.1,
             transition: {
@@ -30,15 +30,13 @@ const Pricing = () => {
               alt={name}
             />
           </div> */}
-          <p className="text-4xl text-black-600 font-bold capitalize mt-2 sm:mt-7">
-            ${price}
-          </p>
+
           <p className="text-lg text-black-600 font-medium capitalize mb-2 sm:mb-7">
             {name}
           </p>
           <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
             <li className="relative check custom-list my-2">
-              Unlimited access to public audios
+              Unlimited feature access
             </li>
             <li className="relative check custom-list my-2">
               Purchased hour never expired
@@ -47,7 +45,7 @@ const Pricing = () => {
               Freely transfer hours to friends and families
             </li>
             <li className="relative check custom-list my-2">
-              100% satisfaction guarantee, or money back, no question asked
+              100% satisfaction guarantee, or money back
             </li>
             {extraFeatures.map((feature, index) => (
               <li
@@ -60,7 +58,14 @@ const Pricing = () => {
           </ul>
           <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
             <p className="text-2xl text-black-600 text-center mb-4 ">
-              Free
+              <span className="text-3xl text-black-600 font-bold mt-2 sm:mt-7">
+                <span className="line-through font-thin text-xl">
+                  ${price}/h
+                </span>
+                <span>
+                  $1/book
+                </span>
+              </span>
             </p>
             <ButtonOutline>Select</ButtonOutline>
           </div>
@@ -90,17 +95,23 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
             >
-              Get lifetime deal before beta ends!
+              Get limited lifetime deal before it is sold out!
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
             >
-              Enjoy 50% off for any plans, and get lifetime access to all features.
+              During public beta, we offer limited lifetime deals for early birds.
             </motion.p>
           </ScrollAnimationWrapper>
-          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
+          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-6 lg:px-6">
             <PricePlans name="Pay as you go" price={3} extraFeatures={[]} />
+            <PricePlans name="Monthly" price={2} extraFeatures={[
+              "One free book every month",
+            ]} />
+            <PricePlans name="Yearly" price={1} extraFeatures={[
+              "One free book every month",
+            ]} />
           </div>
         </div>
 

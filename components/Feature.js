@@ -18,8 +18,10 @@ const scenarios = [
 ]
 
 const diggings = [
-  "Audio Keyword searching",
-  "Easy navigation inside the audio: summary + breakdown for each chapters",
+  "Keyword searching inside the audio",
+  "Easy audio navigation via summary + breakdowns",
+  "Share aspiring highlight to social media",
+  "Export to your knolwedge apps, notions, etc",
   "✨ AI Q&A about the audio (coming soon!)",
 ]
 
@@ -84,11 +86,11 @@ const Feature = () => {
         <ScrollAnimationWrapper>
 
           <motion.div className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12" variants={scrollAnimation}>
-            <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-              We light up the audio for you
+            <h3 className="text-2xl lg:text-3xl font-normal leading-relaxed text-black-600">
+              We light up inside audio so it is not a black box anymore
             </h3>
             <p className="my-2 text-black-500">
-              You can dig into knowledge and export easily with our features:
+              You can dig into knowledge and export easily with these features:
             </p>
             <ul className="text-black-500 self-start list-inside ml-8">
               {diggings.map((feature, index) => (
