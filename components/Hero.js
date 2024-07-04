@@ -40,7 +40,7 @@ const Hero = ({
               Focus more on learning, less on screen, with <strong>Audiolit</strong>.
             </h1>
             <p className="text-black-500 mt-4 mb-1">
-              Give a break to your eyes. Learning without looking at the screen.
+              Give a break to your eyes. Start audio learning without looking at the screen.
             </p>
             <p className="text-black-500 mt-1 mb-6">
               With "screen-free higlight", "summary and search", you can harvest knowledge easily, no matter it is Audio books, Podcasts, or recordings.

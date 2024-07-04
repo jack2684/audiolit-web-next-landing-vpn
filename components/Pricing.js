@@ -39,7 +39,7 @@ const Pricing = () => {
               Unlimited feature access
             </li>
             <li className="relative check custom-list my-2">
-              Purchased hour never expired
+              Purchase expired
             </li>
             <li className="relative check custom-list my-2">
               Freely transfer hours to friends and families
@@ -101,16 +101,16 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
             >
-              During public beta, we offer limited lifetime deals for early birds.
+              During public beta, we are happy to offer lifetime deals for early birds.
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-6 lg:px-6">
             <PricePlans name="Pay as you go" price={3} extraFeatures={[]} />
             <PricePlans name="Monthly" price={2} extraFeatures={[
-              "One free book every month",
+              "One free book every month, rollover, never expire",
             ]} />
             <PricePlans name="Yearly" price={1} extraFeatures={[
-              "One free book every month",
+              "One free book every month, rollover, never expire",
             ]} />
           </div>
         </div>

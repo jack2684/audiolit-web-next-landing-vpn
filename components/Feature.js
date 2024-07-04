@@ -21,7 +21,7 @@ const diggings = [
   "Keyword searching inside the audio",
   "Easy audio navigation via summary + breakdowns",
   "Share aspiring highlight to social media",
-  "Export to your knolwedge apps, notions, etc",
+  "Export to your knolwedge apps, (notions, etc)",
   "✨ AI Q&A about the audio (coming soon!)",
 ]
 
