@@ -4,12 +4,7 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
-const features = [
-  "Powerfull online protection.",
-  "Internet without borders.",
-  "Supercharged VPN",
-  "No specific time limits."
-]
+
 
 
 const scenarios = [
@@ -22,6 +17,11 @@ const scenarios = [
   "Laying down in the dark bedroom",
 ]
 
+const diggings = [
+  "Audio Keyword searching",
+  "Easy navigation inside the audio: summary + breakdown for each chapters",
+  "✨ AI Q&A about the audio (coming soon!)",
+]
 
 const Feature = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -85,14 +85,13 @@ const Feature = () => {
 
           <motion.div className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12" variants={scrollAnimation}>
             <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-              We Provide Many Features You Can Use
+              We light up the audio for you
             </h3>
             <p className="my-2 text-black-500">
-              You can explore the features that we provide with fun and have their
-              own functions each feature.
+              You can dig into knowledge and export easily with our features:
             </p>
             <ul className="text-black-500 self-start list-inside ml-8">
-              {features.map((feature, index) => (
+              {diggings.map((feature, index) => (
                 <motion.li
                   className="relative circle-check custom-list"
                   custom={{ duration: 2 + index }}
