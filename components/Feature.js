@@ -22,7 +22,7 @@ const diggings = [
   "Easy audio navigation via summary + breakdowns",
   "Share aspiring highlight to social media",
   "Export to your knolwedge apps, (notions, etc)",
-  "✨ AI Q&A about the audio (coming soon!)",
+  "✨ Interactive Q&A about the audio (coming soon!)",
 ]
 
 const Feature = () => {

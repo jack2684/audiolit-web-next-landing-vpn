@@ -9,7 +9,7 @@ import ButtonPrimary from "./misc/ButtonPrimary";
 const Pricing = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
-  const PricePlans = ({ name, price, extraFeatures = [], }) => {
+  const PricePlans = ({ name, price, discount = null, extraFeatures = [], }) => {
     return (
       <ScrollAnimationWrapper className="flex justify-center">
         <motion.div
@@ -39,14 +39,12 @@ const Pricing = () => {
               Unlimited feature access
             </li>
             <li className="relative check custom-list my-2">
-              Purchase expired
+              Purchase never expire
             </li>
             <li className="relative check custom-list my-2">
               Freely transfer hours to friends and families
             </li>
-            <li className="relative check custom-list my-2">
-              100% satisfaction guarantee, or money back
-            </li>
+
             {extraFeatures.map((feature, index) => (
               <li
                 className="relative check custom-list my-2"
@@ -58,19 +56,36 @@ const Pricing = () => {
           </ul>
           <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
             <p className="text-2xl text-black-600 text-center mb-4 ">
-              <span className="text-3xl text-black-600 font-bold mt-2 sm:mt-7">
-                <span className="line-through font-thin text-xl">
-                  ${price}/h
+              <dev className="text-3xl text-black-600 font-medium mt-2 sm:mt-7">
+                <span className={`${discount ? 'line-through font-thin text-xl' : ''}`}>
+                  <p>
+                    {price}
+                  </p>
                 </span>
-                <span>
-                  $1/book
-                </span>
-              </span>
+                {discount && (
+                  <span>
+                    <p>
+                      {discount}
+                    </p>
+                    <p className="text-sm font-light mx-1">
+                      {name == "Pay as you go" ? '' : 'lifetime'}
+                    </p>
+                  </span>
+                )
+                }
+
+              </dev>
             </p>
             <ButtonOutline>Select</ButtonOutline>
+            {/* <div className="py-5 justify-self-center align-middle bg-green-500">
+              <Image className="justify-self-center" src="/assets/guarantee.png" alt="Free" width={50} height={50} />
+            </div> */}
+            <p className="text-xs my-2">
+              100% satisfaction guarantee, if not refund anytime
+            </p>
           </div>
         </motion.div>
-      </ScrollAnimationWrapper>
+      </ScrollAnimationWrapper >
     )
   }
   return (
@@ -101,16 +116,16 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
             >
-              During public beta, we are happy to offer lifetime deals for early birds.
+              During public preview, we are happy to offer lifetime deals for early birds.
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-6 lg:px-6">
-            <PricePlans name="Pay as you go" price={3} extraFeatures={[]} />
-            <PricePlans name="Monthly" price={2} extraFeatures={[
-              "One free book every month, rollover, never expire",
+            <PricePlans name="Pay as you go" price={"$3/h"} discount={"🎁 $1/book"} extraFeatures={["🎁 One free book upon signup"]} />
+            <PricePlans name="Monthly" price="$2/h" discount={"🎁 66% off"} extraFeatures={[
+              "🎁 One free book every month, rollover, never expire",
             ]} />
-            <PricePlans name="Yearly" price={1} extraFeatures={[
-              "One free book every month, rollover, never expire",
+            <PricePlans name="Yearly" price="$1/h" discount={"🎁 66% off"} extraFeatures={[
+              "🎁 One free book every month, rollover, never expire",
             ]} />
           </div>
         </div>

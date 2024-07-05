@@ -1,6 +1,7 @@
 import Facebook from "../../public/assets/Icon/facebook.svg";
 import Twitter from "../../public/assets/Icon/twitter.svg";
 import Instagram from "../../public/assets/Icon/instagram.svg";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
           {/* <LogoVPN className="h-40 w-auto mb-6" /> */}
           {/* <LogoAudiolit className="w-auto mb-6" height="50%" width="50%" preserveAspectRatio="xMidYMid meet" /> */}
-          <img src="/assets/audiolit-banner.png" alt="Logo" width={"100"} height={"50"} style={{
+          <Image src="/assets/audiolit-banner.png" alt="Logo" width={"100"} height={"50"} style={{
             backgroundColor: 'transparent',
           }} />
           <p className="mb-4">
@@ -26,7 +27,7 @@ const Footer = () => {
               <Instagram className="h-6 w-6" />
             </div>
           </div>
-          <p className="text-gray-400">©{new Date().getFullYear()} - LaslesVPN</p>
+          <p className="text-gray-400">©{new Date().getFullYear()} - Alpinely LLC</p>
         </div>
         <div className=" row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
           <p className="text-black-600 mb-4 font-medium text-lg">Product</p>
@@ -55,7 +56,7 @@ const Footer = () => {
           <p className="text-black-600 mb-4 font-medium text-lg">Engage</p>
           <ul className="text-black-500">
             <li className="my-2 hover:text-blue-200 cursor-pointer transition-all">
-              LaslesVPN ?{" "}
+              Audiolit ?{" "}
             </li>
             <li className="my-2 hover:text-blue-200 cursor-pointer transition-all">
               FAQ{" "}
