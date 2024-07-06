@@ -43,7 +43,7 @@ const Hero = ({
               Give a break to your eyes. Start audio learning without looking at the screen.
             </p>
             <p className="text-black-500 mt-1 mb-6">
-              With "screen-free higlight", "summary and search", you can harvest knowledge easily, no matter it is Audio books, Podcasts, or recordings.
+              Audiolit provides "screen-free higlight", "summary and search", so you can harvest knowledge easily, no matter it is Audio books, Podcasts, or recordings.
             </p>
             <Link href="/register" className="">
               <ButtonPrimary>
