@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-import Link from "next/link";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
-import ButtonOutline from "../misc/ButtonOutline.";
 import Image from "next/image";
 
 const Header = () => {
@@ -103,10 +101,10 @@ const Header = () => {
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            <Link className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-200 transition-all" href="/">
+            {/* <Link className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-200 transition-all" href="/">
               Sign In
             </Link>
-            <ButtonOutline>Sign Up</ButtonOutline>
+            <ButtonOutline>Sign Up</ButtonOutline> */}
           </div>
         </nav>
       </header>

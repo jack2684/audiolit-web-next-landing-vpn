@@ -18,6 +18,7 @@
     "postcss-import": "^16.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-mobile-app-button": "^1.2.18",
     "react-scroll": "^1.9.0",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",

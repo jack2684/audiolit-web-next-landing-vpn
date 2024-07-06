@@ -2,7 +2,6 @@ import { useState } from "react";
 
 // import react slick
 import Slider from "react-slick";
-import Image from "next/image";
 import Stars from "../public/assets/Icon/stars.svg";
 import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
@@ -11,40 +10,40 @@ import Link from 'next/link';
 const Testimoni = ({
   listTestimoni = [
     {
-      name: "iezh Robert",
+      name: "Junjie Guan",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      city: "Bellevue",
+      country: "US",
+      rating: "5/5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "I have been using it when jogging, and I can listen to my favorite book and highlight, without the need to stop or look at the screen. It's very helpful!",
     },
     {
-      name: "iezh Robert",
+      name: "Yijie Wang",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      city: "Snoqualmie",
+      // country: "Poland",
+      rating: "4/5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "I really love many of the features that makes me easier to learn from the audio book. And I can see great potential use case for knowlege retrival.",
     },
     {
-      name: "iezh Robert",
+      name: "Ao Zhang",
       image: "/assets/people-3.png",
-      city: "Warsaw",
+      city: "Ballard",
       country: "Poland",
-      rating: "4.5",
+      rating: "4/5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "The AI summary is helpful for navigation! And I can use the highlight to help me create a TODO list that takeaways from the book. ",
     },
     {
-      name: "iezh Robert",
+      name: "Peilin Hao",
       image: "/assets/people-3.png",
-      city: "Warsaw",
+      city: "Issaquah",
       country: "Poland",
-      rating: "4.5",
+      rating: "4/5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Wow... this is app is really well crafted, it's more than an audio book player, it's a knowledge management tool! I love it!",
     },
   ],
 }) => {
@@ -95,18 +94,18 @@ const Testimoni = ({
             <div className="border-2 border-gray-500 hover:border-blue-200 transition-all rounded-lg p-8 flex flex-col">
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex order-2 xl:order-1">
-                  <Image
+                  {/* <Image
                     src={listTestimonis.image}
                     height={50}
                     width={50}
                     alt="Icon People"
-                  />
-                  <div className="flex flex-col ml-5 text-left">
+                  /> */}
+                  <div className="flex flex-col ml-0 text-left">
                     <p className="text-lg text-black-600 capitalize">
                       {listTestimonis.name}
                     </p>
                     <p className="text-sm text-black-500 capitalize">
-                      {listTestimonis.city},{listTestimonis.country}
+                      {listTestimonis.city}
                     </p>
                   </div>
                 </div>
