@@ -41,7 +41,7 @@ const Testimoni = ({
       image: "/assets/people-3.png",
       city: "Issaquah",
       country: "Poland",
-      rating: "4/5",
+      rating: "5/5",
       testimoni:
         "Wow... this is app is really well crafted, it's more than an audio book player, it's a knowledge management tool! I love it!",
     },

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import Link from 'next/link';
+import LogoAppStore from "../public/assets/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg";
 
 const Hero = ({
   showcase: showcases = [
@@ -45,11 +46,17 @@ const Hero = ({
             <p className="text-black-500 mt-1 mb-6">
               Audiolit provides "screen-free higlight", "summary and search", so you can harvest knowledge easily, no matter it is Audio books, Podcasts, or recordings.
             </p>
-            <Link href="/register" className="">
-              <ButtonPrimary>
-                Sign me up!
-              </ButtonPrimary>
+            <div className="flex-row">
+              <Link href="/register" className="m-5">
+                <ButtonPrimary>
+                  Sign me up!
+                </ButtonPrimary>
+              </Link>
+            </div>
+            <Link href="https://apps.apple.com/dk/app/audiolit/id6502255254" className="m-5">
+              <LogoAppStore className="h-12 w-40" />
             </Link>
+
           </div>
           <div className="flex w-full">
             <motion.div className="h-full w-full" variants={scrollAnimation}>
