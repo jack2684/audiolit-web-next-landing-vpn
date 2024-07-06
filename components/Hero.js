@@ -62,7 +62,10 @@ const Hero = ({
                 layout="responsive"
               /> */}
               <div>
-                <iframe src="https://giphy.com/embed/UUzJ9ZMeUloj6vkNNk" width="480" height="480" style={{ border: 0 }} class="giphy-embed" allowFullScreen></iframe>
+                <video width="600" autoPlay loop muted>
+                  <source src="/assets/audiolit-canva.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </motion.div>
           </div>
