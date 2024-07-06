@@ -47,14 +47,14 @@ const Hero = ({
               Audiolit provides "screen-free higlight", "summary and search", so you can harvest knowledge easily, no matter it is Audio books, Podcasts, or recordings.
             </p>
             <div className="flex-row">
-              <Link href="/register" className="m-5">
+              <Link href="/register" className="my-5">
                 <ButtonPrimary>
                   Sign me up!
                 </ButtonPrimary>
               </Link>
             </div>
-            <Link href="https://apps.apple.com/dk/app/audiolit/id6502255254" className="m-5">
-              <LogoAppStore className="h-12 w-40" />
+            <Link href="https://apps.apple.com/dk/app/audiolit/id6502255254" className="mt-5">
+              <LogoAppStore width="120" height="50" />
             </Link>
 
           </div>
