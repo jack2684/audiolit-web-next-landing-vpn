@@ -19,7 +19,7 @@ const Testimoni = ({
         "I have been using it when jogging, and I can listen to my favorite book and highlight, without the need to stop or look at the screen. It's very helpful!",
     },
     {
-      name: "Yijie Wang",
+      name: "Sophia Moore",
       image: "/assets/people-3.png",
       city: "Snoqualmie",
       // country: "Poland",
@@ -37,7 +37,7 @@ const Testimoni = ({
         "The AI summary is helpful for navigation! And I can use the highlight to help me create a TODO list that takeaways from the book. ",
     },
     {
-      name: "Peilin Hao",
+      name: "Liam Williams",
       image: "/assets/people-3.png",
       city: "Issaquah",
       country: "Poland",
