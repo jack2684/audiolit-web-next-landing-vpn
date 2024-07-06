@@ -68,7 +68,7 @@ const Pricing = () => {
                       {discount}
                     </p>
                     <p className="text-sm font-light mx-1">
-                      {name == "Pay as you go" ? '' : 'lifetime'}
+                      {name == "Pay as you go" ? 'During private preview' : 'lifetime'}
                     </p>
                   </span>
                 )
@@ -81,7 +81,7 @@ const Pricing = () => {
               <Image className="justify-self-center" src="/assets/guarantee.png" alt="Free" width={50} height={50} />
             </div> */}
             <p className="text-xs my-2">
-              100% satisfaction guarantee, if not refund anytime
+              100% satisfaction guarantee. Cancel anytime, full refund in 30 days.
             </p>
           </div>
         </motion.div>
