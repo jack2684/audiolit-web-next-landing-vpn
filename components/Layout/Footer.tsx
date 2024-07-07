@@ -53,7 +53,7 @@ const Footer = () => {
           <p className="text-black-600 mb-4 font-medium text-lg">Engage</p>
           <ul className="text-black-500">
             <li className="my-2 hover:text-blue-200 cursor-pointer transition-all">
-              Audiolit ?{" "}
+              Audiolit{" "}
             </li>
             <li className="my-2 hover:text-blue-200 cursor-pointer transition-all">
               FAQ{" "}
