@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -64,9 +65,12 @@ const Footer = () => {
             <li className="my-2 hover:text-blue-200 cursor-pointer transition-all">
               About Us{" "}
             </li>
-            <li className="my-2 hover:text-blue-200 cursor-pointer transition-all">
-              Privacy Policy{" "}
-            </li>
+            <Link href="/privacy">
+              <li className="my-2 hover:text-blue-200 cursor-pointer transition-all">
+                Privacy Policy{" "}
+              </li>
+            </Link>
+
             <li className="my-2 hover:text-blue-200 cursor-pointer transition-all">
               Terms of Service{" "}
             </li>
