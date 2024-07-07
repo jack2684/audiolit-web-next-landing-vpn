@@ -49,7 +49,7 @@ const Hero = ({
             <div className="flex-row">
               <Link href="https://tally.so/r/w8eQ6O" className="my-5">
                 <ButtonPrimary>
-                  Sign up and get one free audio book
+                  Sign up and get one free credit
                 </ButtonPrimary>
               </Link>
             </div>
