@@ -69,8 +69,10 @@ const Hero = ({
                 layout="responsive"
               /> */}
               <div>
-                <video width="600" autoPlay loop muted>
-                  <source src="/assets/audiolit-canva.mp4" type="video/mp4" />
+                <video width="600" autoPlay muted>
+                  <source src="/assets/audiolit-canva.mp4" type="video/mp4"
+                    onError={(e) => console.error('Video Error:', e)}
+                  />
                   Your browser does not support the video tag.
                 </video>
               </div>
