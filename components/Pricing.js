@@ -54,27 +54,24 @@ const Pricing = () => {
             ))}
           </ul>
           <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
-            <p className="text-2xl text-black-600 text-center mb-4 ">
-              <dev className="text-3xl text-black-600 font-medium mt-2 sm:mt-7">
-                <span className={`${discount ? 'line-through font-thin text-xl' : ''}`}>
+            <div className="text-3xl text-black-600 font-medium mt-2 sm:mt-7">
+              <span className={`${discount ? 'line-through font-thin text-xl' : ''}`}>
+                <p>
+                  {price}
+                </p>
+              </span>
+              {discount && (
+                <span>
                   <p>
-                    {price}
+                    {discount}
+                  </p>
+                  <p className="text-sm font-light mx-1">
+                    {name == "Pay as you go" ? 'during public preview' : '10 books + lifetime discount, limited seats'}
                   </p>
                 </span>
-                {discount && (
-                  <span>
-                    <p>
-                      {discount}
-                    </p>
-                    <p className="text-sm font-light mx-1">
-                      {name == "Pay as you go" ? 'During private preview' : 'lifetime'}
-                    </p>
-                  </span>
-                )
-                }
-
-              </dev>
-            </p>
+              )
+              }
+            </div>
             <ButtonOutline>Select</ButtonOutline>
             {/* <div className="py-5 justify-self-center align-middle bg-green-500">
               <Image className="justify-self-center" src="/assets/guarantee.png" alt="Free" width={50} height={50} />
@@ -119,12 +116,17 @@ const Pricing = () => {
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-6 lg:px-6">
-            <PricePlans name="Pay as you go" price={"$3/h"} discount={"🎁 $1/book"} extraFeatures={["🎁 One free book upon signup"]} />
-            <PricePlans name="Monthly" price="$2/h" discount={"🎁 66% off"} extraFeatures={[
-              "🎁 One free book every month, rollover, never expire",
+            <PricePlans name="Pay as you go" price={"$2/h"} discount={"🎁 $1/book"} extraFeatures={[
+              "🎁 One free book upon signup",
+              "$2/h for extra book"
             ]} />
-            <PricePlans name="Yearly" price="$1/h" discount={"🎁 66% off"} extraFeatures={[
-              "🎁 One free book every month, rollover, never expire",
+            <PricePlans name="Monthly" price="$15/month" discount={"🎁 $1/book"} extraFeatures={[
+              "🎁 1 book credit every month, rollover, never expire",
+              "$1.5/h for extra book"
+            ]} />
+            <PricePlans name="Yearly" price="$10/month" discount={"🎁 $1/book"} extraFeatures={[
+              "🎁 12 book credits every year, rollover, never expire",
+              "$1/h for extra book",
             ]} />
           </div>
         </div>

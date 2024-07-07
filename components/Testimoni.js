@@ -10,7 +10,7 @@ import Link from 'next/link';
 const Testimoni = ({
   listTestimoni = [
     {
-      name: "Junjie Guan",
+      name: "Peilin Hao",
       image: "/assets/people-3.png",
       city: "Bellevue",
       country: "US",
