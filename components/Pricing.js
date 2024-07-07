@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { motion } from "framer-motion";
-import ButtonOutline from "./misc/ButtonOutline.";
+import ButtonOutline from "./misc/ButtonOutline";
 import Testimoni from "./Testimoni";
 import Link from 'next/link';
 
