@@ -47,9 +47,9 @@ const Hero = ({
               Audiolit provides "screen-free higlight", "summary and search", so you can harvest knowledge easily, no matter it is Audio books, Podcasts, or recordings.
             </p>
             <div className="flex-row">
-              <Link href="/register" className="my-5">
+              <Link href="/connect" className="my-5">
                 <ButtonPrimary>
-                  Sign me up!
+                  Connect to my audio library!
                 </ButtonPrimary>
               </Link>
             </div>

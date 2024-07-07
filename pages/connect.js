@@ -4,7 +4,7 @@ import SeoHead from "../components/SeoHead";
 export default function Home() {
   return (
     <>
-      <SeoHead title='Audiolit Landing Page' />
+      <SeoHead title='Audiolit Connect Page' />
       <Layout>
         <div>
           jackjack
