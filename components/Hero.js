@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import ButtonOutline from "./misc/ButtonOutline";
 import { motion } from "framer-motion";
-import getScrollAnimation from "../utils/getScrollAnimation";
+import getScrollAnimation, { INDEIGOGO_URL } from "../utils/utils";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import Link from 'next/link';
 import LogoAppStore from "../public/assets/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg";
@@ -47,12 +47,12 @@ const Hero = ({
             <p className="text-black-500 mt-1 mb-6">
               Audiolit provides "screen-free higlight", "summary and search", so you can harvest knowledge easily, no matter it is Audio books, Podcasts, or recordings.
             </p>
-            <Link href="https://tally.so/r/w8eQ6O" className="mt-5">
+            <Link href={INDEIGOGO_URL} className="mt-5">
               <ButtonPrimary>
                 1 free book for new user
               </ButtonPrimary>
             </Link>
-            <Link href="https://tally.so/r/w8eQ6O" className="mt-5">
+            <Link href={INDEIGOGO_URL} className="mt-5">
               <ButtonOutline >
                 Early Bird! $1 for 1 book
               </ButtonOutline>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useMemo } from "react";
 import { motion } from "framer-motion";
-import getScrollAnimation from "../utils/getScrollAnimation";
+import getScrollAnimation from "../utils/utils";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 

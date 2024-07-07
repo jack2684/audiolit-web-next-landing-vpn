@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import getScrollAnimation from "../utils/getScrollAnimation";
+import getScrollAnimation, { INDEIGOGO_URL } from "../utils/utils";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { motion } from "framer-motion";
 import ButtonOutline from "./misc/ButtonOutline";
@@ -73,7 +73,7 @@ const Pricing = () => {
               )
               }
             </div>
-            <Link href="https://www.indiegogo.com/project/preview/73a686da">
+            <Link href={INDEIGOGO_URL}>
               <ButtonOutline>Select</ButtonOutline>
             </Link>
             {/* <div className="py-5 justify-self-center align-middle bg-green-500">
