@@ -118,7 +118,7 @@ const Pricing = () => {
               During public preview, we are happy to offer lifetime deals for early birds.
             </motion.p>
           </ScrollAnimationWrapper>
-          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-6 lg:px-6">
+          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-6 lg:px-6">
             <PricePlans name="Pay as you go" price={"$2/h"} discount={"🎁 $1/book"} extraFeatures={[
               "🎁 One free book credit upon signup",
               "$2/h for extra book"
