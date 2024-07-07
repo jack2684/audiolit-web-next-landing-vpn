@@ -4,6 +4,7 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { motion } from "framer-motion";
 import ButtonOutline from "./misc/ButtonOutline.";
 import Testimoni from "./Testimoni";
+import Link from 'next/link';
 
 const Pricing = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -66,13 +67,15 @@ const Pricing = () => {
                     {discount}
                   </p>
                   <p className="text-sm font-light mx-1">
-                    {name == "Pay as you go" ? 'during public preview' : '10 books + lifetime discount, limited seats'}
+                    {name == "Pay as you go" ? 'only now, in public preview' : '10 books + lifetime discount, limited seats'}
                   </p>
                 </span>
               )
               }
             </div>
-            <ButtonOutline>Select</ButtonOutline>
+            <Link href="https://www.indiegogo.com/project/preview/73a686da">
+              <ButtonOutline>Select</ButtonOutline>
+            </Link>
             {/* <div className="py-5 justify-self-center align-middle bg-green-500">
               <Image className="justify-self-center" src="/assets/guarantee.png" alt="Free" width={50} height={50} />
             </div> */}
