@@ -1,6 +1,5 @@
 import { useMemo } from "react";
 import ButtonPrimary from "./misc/ButtonPrimary";
-import ButtonOutline from "./misc/ButtonOutline";
 import { motion } from "framer-motion";
 import getScrollAnimation, { INDEIGOGO_URL } from "../utils/utils";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
@@ -45,18 +44,18 @@ const Hero = ({
               Give a break to your eyes. Start audio learning without looking at the screen.
             </p>
             <p className="text-black-500 mt-1 mb-6">
-              Audiolit provides "screen-free higlight", "summary and search", so you can harvest knowledge easily, no matter it is Audio books, Podcasts, or recordings.
+              Audiolit provides <strong>screen-free higlight</strong>, <strong>summary and search</strong>, so you can harvest knowledge easily, no matter it is Audio books, Podcasts, or recordings.
             </p>
             <Link href={INDEIGOGO_URL} className="mt-5">
               <ButtonPrimary>
-                1 free book for new user
+                1 free book, and $1 for extra book
               </ButtonPrimary>
             </Link>
-            <Link href={INDEIGOGO_URL} className="mt-5">
+            {/* <Link href={INDEIGOGO_URL} className="mt-5">
               <ButtonOutline >
                 Early Bird! $1 for 1 book
               </ButtonOutline>
-            </Link>
+            </Link> */}
 
 
           </div>
