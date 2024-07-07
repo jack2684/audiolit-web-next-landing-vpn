@@ -57,9 +57,7 @@ const Hero = ({
                 Early Bird! $1 for 1 book
               </ButtonOutline>
             </Link>
-            <Link href="https://apps.apple.com/dk/app/audiolit/id6502255254" className="mt-5">
-              <LogoAppStore width="120" height="50" />
-            </Link>
+
 
           </div>
           <div className="flex w-full">
@@ -72,13 +70,18 @@ const Hero = ({
                 height={383}
                 layout="responsive"
               /> */}
-              <div>
+              <div >
                 <video width="600" autoPlay muted>
                   <source src="/assets/audiolit-canva.mp4" type="video/mp4"
                     onError={(e) => console.error('Video Error:', e)}
                   />
                   Your browser does not support the video tag.
                 </video>
+                <div className="flex-1 flex-row justify-end my-5" width="100%">
+                  <Link href="https://apps.apple.com/dk/app/audiolit/id6502255254" className="mt-5">
+                    <LogoAppStore width="120" height="50" />
+                  </Link>
+                </div>
               </div>
             </motion.div>
           </div>
