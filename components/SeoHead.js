@@ -9,12 +9,12 @@ const defaultMeta = {
   description:
     'Focus more on learning, less on screen',
   // change base url of your web (without '/' at the end)
-  url: 'https://next-landing-vpn.vercel.app',
+  url: 'https://app.audiolit.alpinely.ai/',
   type: 'website',
   robots: 'follow, index',
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status 
-  image: 'https://next-landing-vpn.vercel.app/assets/card-image.png',
+  image: 'https://app.audiolit.alpinely.ai/assets/card-image.png',
   author: 'jack@alpinely.ai'
 };
 
