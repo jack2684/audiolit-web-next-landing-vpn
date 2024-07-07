@@ -8,7 +8,7 @@ const ConnectPage = () => {
   return (
     <>
       <SeoHead title='Audiolit Landing Page' />
-      <iframe src="https://jack2684.github.io/alpinely.ai/" title="Audiolit" width="100%" height="100%" />
+      <iframe src="https://jack2684.github.io/alpinely.ai/" title="Audiolit" width="100%" height="2048px" />
     </>
   );
 };

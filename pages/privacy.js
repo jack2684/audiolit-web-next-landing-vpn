@@ -8,7 +8,7 @@ const PrivacyPage = () => {
   return (
     <>
       <SeoHead title='Audiolit Landing Page' />
-      <iframe src="https://jack2684.github.io/alpinely.ai/privacy.html" title="Audiolit" width="100%" height="1000px" />
+      <iframe src="https://jack2684.github.io/alpinely.ai/privacy.html" title="Audiolit" width="100%" height="2048px" />
     </>
   );
 };
