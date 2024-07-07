@@ -67,7 +67,7 @@ const Pricing = () => {
                     {discount}
                   </p>
                   <p className="text-sm font-light mx-1">
-                    {name == "Pay as you go" ? 'only now, in public preview' : '10 books + lifetime discount, limited seats'}
+                    {name == "Pay as you go" ? 'only now, in public preview' : 'limited seats'}
                   </p>
                 </span>
               )
@@ -123,11 +123,11 @@ const Pricing = () => {
               "🎁 One free book credit upon signup",
               "$2/h for extra book"
             ]} />
-            <PricePlans name="Monthly" price="$15/month" discount={"🎁 $1/book"} extraFeatures={[
+            <PricePlans name="Monthly" price="$15/month" discount={"🎁 lifetime 30% off"} extraFeatures={[
               "🎁 1 book credit every month, rollover, never expire",
               "$1.5/h for extra book"
             ]} />
-            <PricePlans name="Yearly" price="$10/month" discount={"🎁 $1/book"} extraFeatures={[
+            <PricePlans name="Yearly" price="$10/month" discount={"🎁 lifetime 30% off"} extraFeatures={[
               "🎁 12 book credits upfront, refill every year, rollover, never expire",
               "$1/h for extra book",
             ]} />
