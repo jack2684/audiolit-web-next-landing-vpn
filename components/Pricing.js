@@ -120,7 +120,7 @@ const Pricing = () => {
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-6 lg:px-6">
             <PricePlans name="Pay as you go" price={"$2/h"} discount={"🎁 $1/book"} extraFeatures={[
-              "🎁 One free book upon signup",
+              "🎁 One free book credit upon signup",
               "$2/h for extra book"
             ]} />
             <PricePlans name="Monthly" price="$15/month" discount={"🎁 $1/book"} extraFeatures={[
@@ -128,7 +128,7 @@ const Pricing = () => {
               "$1.5/h for extra book"
             ]} />
             <PricePlans name="Yearly" price="$10/month" discount={"🎁 $1/book"} extraFeatures={[
-              "🎁 12 book credits every year, rollover, never expire",
+              "🎁 12 book credits upfront, refill every year, rollover, never expire",
               "$1/h for extra book",
             ]} />
           </div>
