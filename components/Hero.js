@@ -5,6 +5,7 @@ import getScrollAnimation, { INDEIGOGO_URL } from "../utils/utils";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import Link from 'next/link';
 import LogoAppStore from "../public/assets/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg";
+import Image from "next/image";
 
 const Hero = ({
   showcase: showcases = [
@@ -76,9 +77,13 @@ const Hero = ({
                   />
                   Your browser does not support the video tag.
                 </video>
-                <div className="flex-1 flex-row justify-end my-5" width="100%">
-                  <Link href="https://apps.apple.com/dk/app/audiolit/id6502255254" className="mt-5">
+                <div className="flex flex-grow my-5" width="100%" height="10">
+                  <Link href="https://apps.apple.com/dk/app/audiolit/id6502255254" className="mr-5">
                     <LogoAppStore width="120" height="50" />
+                  </Link>
+                  <Link href="https://play.google.com/store/apps" className="mr-5">
+                    <Image src="/assets/googleplay.png" alt="Google Play" width="130" height="50" className="flex-none object-contain" />
+                    <span className="text-xs">coming soon</span>
                   </Link>
                 </div>
               </div>
