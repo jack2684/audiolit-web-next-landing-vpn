@@ -15,4 +15,4 @@ export default function getScrollAnimation() {
   })
 }
 
-export const INDEIGOGO_URL = "https://www.indiegogo.com/project/preview/73a686da";
+export const INDEIGOGO_URL = "https://www.indiegogo.com/projects/audiolight-focus-more-on-leanring-less-on-screen/x/19794009#/";
